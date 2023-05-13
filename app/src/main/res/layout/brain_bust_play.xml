@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bowlby_one"
+        android:text="BrainBust"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:paddingTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_boxedEdges="top">
+
+        <ImageView
+            android:id="@+id/question"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"/>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <ImageButton
+                android:id="@+id/optionA"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:scaleType="fitCenter"
+                android:scaleX="1.6"
+                android:scaleY="1.6"
+                android:layout_marginRight="2dp"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <ImageButton
+                android:id="@+id/optionB"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:scaleType="fitCenter"
+                android:scaleX="1.6"
+                android:scaleY="1.6"
+                android:layout_marginRight="2dp"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <ImageButton
+                android:id="@+id/optionC"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:scaleType="fitCenter"
+                android:scaleX="1.6"
+                android:scaleY="1.6"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.wear.widget.BoxInsetLayout>
